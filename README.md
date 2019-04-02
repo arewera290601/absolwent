@@ -1,2 +1,2 @@
-# absolwent
-Aolikacja dla absolwentow 1lo cg
+# absolwent1
+Aplikacja dla absolwentów I LO CG

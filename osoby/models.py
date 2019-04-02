@@ -13,12 +13,13 @@ class Klasa(models.Model):
     def __str__(self):
         return self.nazwa + " (" + str(self.rok_matury) + ")"
 
+
 class Absolwent(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     klasa = models.ForeignKey(Klasa, on_delete=models.SET_NULL, blank=True, null=True, related_name="uczniowie")
 
     class Meta:
         verbose_name_plural = 'absolwenci'
+
     def __str__(self):
         return self.user.get_full_name()
-
